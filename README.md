@@ -5,7 +5,7 @@ DeepAIpha是个简易的模型训练测试框架。
 phase1: train on [2015, 2016, 2017, 2018]， valid on 2019, test on 2020
 phase2: train on [2016, 2017, 2018, 2019], valid on 2020， test on 2021
 phase3: train on [2017, 2018, 2019, 2020], valid on 2021, test on 2022
-. /config
+./config
 保存各个实验配置. yaml文件，文件名遵循(MODEL)/(PHASE)/(ID)
 /model
 保存各种模型的结构，定义
