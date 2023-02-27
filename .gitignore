@@ -1,0 +1,31 @@
+# https://github . com/ github/ git ignore/b1ob/master/Python. gitignore
+pycache_
+temp/
+results/
+*.pyc
+*.pyd
+* . ipynb
+. ipynb_ checkpoints
+_build
+build/
+dist/ 
+
+* .pkl
+*.hd5
+*.csv
+
+. env
+. vim
+. nvimrc
+. vscode
+
+/data
+/data2
+/data_ full
+
+*.egg info/
+
+# test related
+test-output. xml
+. output
+.data
