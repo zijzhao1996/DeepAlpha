@@ -1,0 +1,45 @@
+model:
+  activation: gelu
+  attention: full
+  d_ff: 256
+  d_layers: 1
+  d_model: 256
+  dec_in: 452
+  decode_method: linear
+  distil: true
+  dropout: 0.5
+  e_layers: 3
+  enc_in: 452
+  factor: 3
+  label_len: 9
+  n_heads: 16
+  out_dim: 1
+  output_attention: false
+system:
+  device: cuda:1
+  experimental_id: 67
+  ispytorch: true
+  isseq: true
+  istree: false
+  model_name: Informer
+  phase: phase1
+test:
+  figures_save_path: ./results/analysis/Informer/phase1/07
+  log_save_path: ./results/logs/Informer/phase1/07/
+  pred_save_path: .results/preds/Informer/phase1/07/preds.feather
+training:
+  batch_size: 1024
+  data_load_path: ./temp/data/phase1
+  data_path: ./data
+  early_stop: 3
+  lambda: 0.6
+  learning_rate: 5.0e-05
+  log_save_path: ./results/logs/Informer/phase1/07/
+  loss: mse
+  model_save_path: ./results/ckpts/Informer/phase1/07/model.ckpt
+  n_epochs: 20
+  num_workers: 10
+  scheduler: ExponentialLR
+  seq_data_load_path: ./temp/seq_data/phase1
+  tsboard_save_path: ./results/tsboards/Informer/phase1/07/
+  weight_decay: 0.0001
